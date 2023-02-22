@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #f3f5f7;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+       .top{
+        width: 1200px;
+        height: 101px;
+        margin: 0 auto;
+       }
+       .top-first-00{
+        float: left;
+        width: 195px;
+        height: 42px;
+        padding-top: 30px;
+       }
+       .top-first-01{
+        float: left;
+        width: 237px;
+        height: 40px;
+        margin-top: 38px;
+        margin-left: 79px;
+       }
+       .top-first-01 li{
+        float: left;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 0 5px;
+        height: 33px;
+        margin-left: 30px;
+       }
+       .top-first-01 li:hover{
+        border-bottom: 2px solid #00a4ff;;
+       }
+       .top-first-01 li:first-child{
+        margin-left: 0;
+       }
+       .top-first-02{
+        float: left;
+        width: 412px;
+        height: 40px;
+        margin-top: 31px;
+        margin-left: 94px;
+        border: solid 1px #00a4ff;
+       }
+       .top-first-02 input{
+        float: left;
+        border: 0;
+        width: 361px;
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+       }
+       .top-first-02 input:focus{
+        outline:none;
+       }
+       .dd{
+        float: left;
+        width: 51px;
+        height: 41px;
+        background-image: url(./image/btn.png);
+       }
+       .top-first-03{
+        float: left;
+        width: 118px;
+        height: 33px;
+        margin-left: 31px;
+        margin-top: 37px;
+       }
+       .top-first-03 img{
+        vertical-align: middle;
+       }
+       .top-first-03 span{
+        font-size: 14px;
+       }
+       .s4{
+        width: 100%;
+        height: 420px;
+        border: 1px solid black;
+        background-color: #1c036c;
+       }
+       .banner-2 {
+        margin: 0 auto;
+        width: 1200px;
+        height: 420px;
+        background-image: url(./image/banner2.png);
+        }
+        .left{
+            width: 190px;
+            height: 420px;
+            float: left;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0, 0.3);
+        }
+        .left ul{
+            width: 146px;
+	        height: 364px;
+            padding-left: 20px;
+            padding-top: 28px;
+        }
+        .left li{
+            color: white;
+            font-size: 14px;
+            line-height: 40px;
+        }
+        .left li::after{
+            content: '＞';
+            color: white;
+            float: right;
+        }
+        .right{
+            float: right;
+            width: 231px;
+	        height: 300px;
+            margin-top: 50px;
+            background-color: #ffffff;
+        }
+        .right-01{
+            width: 231px;
+	        height: 48px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 48px;
+            background-color: #9bceea;
+        }
+        .right-03{
+            margin: 0 auto;
+            width: 200px;
+            height: 41px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 41px;
+            border: 1px solid #00a4ff;
+            margin-bottom: 11px;
+        }
+        .right-02{
+            margin:0 19px;
+        }
+        .sp1{
+            font-size: 16px;
+            font-weight: bold;
+            color: #4e4e4e;
+        }
+        .sp2{
+            font-size: 14px;
+            font-weight: bold;
+            color: #4e4e4e;
+        }
+        .sp3{
+            font-size: 12px;
+            font-weight: bold;
+            color: #a5a5a5;
+        }
+        .right-02 li{
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+        }
+        .nav{
+            width: 1200px;
+            height: 60px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 3px 0px 
+		rgba(118, 118, 118, 0.2);
+        }
+        .nav-01{
+            line-height: 60px;
+            margin-left: 34px;
+        }
+        .nav-01 li{
+            float: left;
+            height: 18px;
+            line-height: 18px;
+            margin-top: 25px;
+            border-left: 1px solid #bfbfbf;
+            padding: 0 35px;
+            font-size: 16px;
+            color: #050505;
+        }
+        .nav-01 li:first-child{
+            border-left: 0;
+            color: #00a4ff;
+            font-size: 16px;
+        }
+        .nav-02{
+            float: right;
+            margin-right: 26px;
+            margin-top: 21px;
+            color: #00a4ff;
+            font-size: 14px;
+        }
+        .article-01{
+            width: 1200px;
+            height: 595px;
+            margin: 0 auto;
+            margin-top: 37px;
+        }
+        .article-01-top{
+            width: 100%;
+            height: 39px;
+        }
+        .article-01-top div:nth-child(1){
+            float: left;
+            color: #494949;
+            font-size: 20px;
+        }
+        .article-01-top div:nth-child(2){
+            float: right;
+            color: #a5a5a5;
+            font-size: 12px;
+            margin-top: 8px;
+            margin-right: 35px;
+        }
+        .article-01-bottom-10{
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            width: 228px;
+            height: 270px;
+            box-shadow: 0px 2px 5px 0px 
+		rgba(118, 118, 118, 0.5);
+        }
+        .article-01-bottom-10:nth-child(5n){
+            margin-right: 0;
+        }
+        .article-01-bottom-10 img{
+            width: 228px;
+        }
+        .article-01-bottom-10-tltie{
+            padding: 0 24px;
+            margin-top: 24px;
+            color: #050505;
+            font-size: 14px;
+        }
+        .article-01-bottom-10-txt{
+            padding: 0 24px;
+            margin-top: 20px;
+            color: #999999;
+            font-size: 12px;
+        }
+        .article-01-bottom-10-txt span{
+            color: #ff7c2d;
+            font-size: 12px;
+        }
+        .footer{
+            width: 100%;
+            height: 417px;
+            margin-top: 40px;
+            background-color: #ffffff;
+        }
+        .footer-01{
+            margin: 0 auto;
+            width: 1200px;
+            height: 182px;
+        }
+        .footer-left{
+            float: left;
+            width: 435px;
+            height: 150px;
+            margin-top: 33px;
+            margin-left: 20px;
+        }
+        .footer-left-txt{
+            width: 435px;
+	        height: 30px;
+            margin-top: 25px;
+            font-family: SimSun;
+            font-size: 12px;
+            line-height: 18px;
+            color: #666666;
+        }
+        .footer-left-btn{
+            margin-top: 15px;
+            width: 120px;
+            height: 36px;
+            border: solid 1px #00a4ff;
+            font-size: 16px;
+            line-height: 36px;
+            color: #00a4ff;
+            text-align: center;
+        }
+        .footer-right{
+            float: left;
+            margin-top: 33px;
+            margin-left: 190px;
+            width: 534px;
+            height: 150px;
+        }
+        dl{
+            float: left;
+            margin-left: 120px;
+        }
+        dl:first-child{
+            margin-left: 0;
+        }
+        dt{
+            color: #333333;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        dd{
+            font-family: SimSun;
+            color: #333333;
+            font-size: 12px;
+            line-height: 21px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- logo部分 -->
+    <div class="top">
+        <div class="top-first-00">
+            <a href="#"><img src="./image/logo.png"></a>
+        </div>
+        <div class="top-first-01">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+        </div>
+        <div class="top-first-02">
+            <input type="text" placeholder="请输入关键词">
+            <div class="dd" onclick="alert('1')"></div>
+        </div>
+        <div class="top-first-03">
+            <img src="./image/user.png">
+            <span>qq-leishui</span>
+        </div>
+    </div>
+    
+    <!-- 轮播图 -->
+    <div class="s4">
+        <div class="banner-2">
+            <div class="left">
+                <ul>
+                    <li>前端开发</li>
+                    <li>后端开发</li>
+                    <li>移动开发</li>
+                    <li>人工智能</li>
+                    <li>商业预测</li>
+                    <li>云计算&大数据</li>
+                    <li>运维&从测试</li>
+                    <li>UI设计</li>
+                    <li>产品</li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="right-01">
+                    我的课程表
+                </div>
+                <div class="right-02">
+                    <ul>
+                        <li><span class="sp1">继续学习</span> <span class="sp2">程序语言设计</span><br><span class="sp3">正在学习-使用对象</span></li>
+                        <li><span class="sp1">继续学习</span> <span class="sp2">程序语言设计</span><br><span class="sp3">正在学习-使用对象</span></li>
+                        <li><span class="sp1">继续学习</span> <span class="sp2">程序语言设计</span><br><span class="sp3">正在学习-使用对象</span></li>
+                    </ul>
+                </div>
+                <div class="right-03">全部课程</div>
+            </div>
+        </div>
+               
+    </div>
+
+    <!-- 导航区 -->
+    <div class="nav">
+        <div class="nav-01">
+            <ul>
+                <li>精品推荐</li>
+                <li>JQuery</li>
+                <li>Spark</li>
+                <li>MySQL</li>
+                <li>JavaWeb</li>
+                <li>MySQL</li>
+                <li>JavaWeb</li>
+            </ul>
+        </div>
+        <div class="nav-02">
+            修改兴趣
+        </div>
+    </div>
+
+    <!-- 精品推荐 -->
+    <div class="article-01">
+        <div class="article-01-top">
+            <div>精品推荐</div>
+            <div>查看全部</div>
+        </div>
+        <div class="article-01-bottom">
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+            <div class="article-01-bottom-10">
+                <img src="./image/course01.png">
+                <div class="article-01-bottom-10-tltie">
+                    Think PHP 5.0 博客系统实战项目演练
+                </div>
+                <div class="article-01-bottom-10-txt">
+                    <span>高级</span> • 1125人在学习
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer-01">
+            <!-- 左 -->
+            <div class="footer-left">
+                <a href="#"><img src="./image/logo.png"></a>
+                <div class="footer-left-txt">
+                    学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br>© 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号
+                </div>
+                <div class="footer-left-btn">
+                    下载APP
+                </div>
+            </div>
+            <!-- 右 -->
+            <div class="footer-right">
+                <dl>
+                    <dt>关于学成网</dt>
+                    <dd>关于</dd>
+                    <dd>管理团队</dd>
+                    <dd>工作机会</dd>
+                    <dd>客户服务</dd>
+                    <dd>帮助</dd>
+                 </dl>
+                 <dl>
+                    <dt>新手指南</dt>
+                    <dd>如何注册</dd>
+                    <dd>如何选课</dd>
+                    <dd>如何拿到毕业证</dd>
+                    <dd>学分是什么</dd>
+                    <dd>考试未通过怎么办</dd>
+                 </dl>
+                 <dl>
+                    <dt>合作伙伴</dt>
+                    <dd>合作机构</dd>
+                    <dd>合作导师</dd>
+                 </dl>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

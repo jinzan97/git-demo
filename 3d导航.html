@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .header{
+        width: 300px;
+        height: 40px;
+        margin: 100px auto;
+        position: relative;
+       }
+       ul{
+        list-style: none;
+       }
+       a{
+        display: inline-block;
+        width: 100%;
+        height: 40px;
+        text-decoration: none;
+        color: black;
+       }
+       li{
+        width: 80px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        transition: all 1s;
+        transform-style: preserve-3d;
+       }
+       .header li a:first-child{
+        background-color: cadetblue;
+        transform: translateZ(20px);
+       }
+       .header li a:last-child{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: yellow;
+        transform: rotateX(90deg) translateZ(20px);
+       }
+       li:hover{
+        transform: rotateX(-90deg);
+       }
+    </style>
+</head>
+<body>
+   <div class="header">
+       <ul>
+        <li>
+            <a href="#">首页</a>
+            <a href="#">index</a>
+        </li>
+        <li>
+            <a href="#">登陆</a>
+            <a href="#">login</a>
+        </li>
+        <li>
+            <a href="#">注册</a>
+            <a href="#">register</a>
+        </li>
+       </ul>
+   </div>
+</body>
+</html>

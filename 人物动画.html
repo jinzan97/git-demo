@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 140px;
+            height: 140px;
+            background-image: url(./image/bg.png);
+            animation: dong 1s steps(12) infinite,run 20s forwards;
+        }
+        @keyframes dong {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 1680px 0;
+            }
+        }
+        @keyframes run {
+            to {
+                transform: translateX(800px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
